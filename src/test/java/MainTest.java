@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.BeforeEach;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
@@ -27,13 +29,15 @@ class MainTest {
 
     @org.junit.jupiter.api.Test
     void testarrayOfOddIntegers() {
-        assertTrue(list1.equals(Main.arrayOfOddIntegers(number1)));
-
-        assertTrue(list2.equals(Main.arrayOfOddIntegers(number2)));
-
-        assertTrue(list3.equals(Main.arrayOfOddIntegers(number3)));
-
-        assertTrue(list4.equals(Main.arrayOfOddIntegers(number4)));
+        //assertEquals(list1,Main.arrayOfOddIntegers(number1));
+        //assertTrue(list1.equals(Main.arrayOfOddIntegers(number1)));
+        assertEquals(Arrays.toString(list1),Arrays.toString(Main.arrayOfOddIntegers(number1)));
+        //assertTrue(list2.equals(Main.arrayOfOddIntegers(number2)));
+        assertEquals(Arrays.toString(list2),Arrays.toString(Main.arrayOfOddIntegers(number2)));
+        //assertTrue(list3.equals(Main.arrayOfOddIntegers(number3)));
+        assertEquals(Arrays.toString(list3),Arrays.toString(Main.arrayOfOddIntegers(number3)));
+        //assertTrue(list4.equals(Main.arrayOfOddIntegers(number4)));
+        assertEquals(Arrays.toString(list4),Arrays.toString(Main.arrayOfOddIntegers(number4)));
 
 
     }
